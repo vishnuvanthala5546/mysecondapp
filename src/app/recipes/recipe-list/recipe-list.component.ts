@@ -11,7 +11,8 @@ export class RecipeListComponent implements OnInit {
     new Recipe(
       'A Test Recipe',
       'This is Simply a test',
-      'https://pinchofyum.com/wp-content/uploads/Chili-Sesame-Zoodles-Recipe.jpg'),
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3txCZgnGLpRVU0' +
+      '33OHrtwDwa5qAC0mZQ_xPH61cPpMOW8NfR_w'),
     new Recipe(
       'A Test Recipe',
       'This is Simply a test',
