@@ -18,6 +18,7 @@ import {RecipeStartComponent} from './recipes/recipe-start/recipe-start.componen
 import {FormdataComponent} from './formdata/formdata.component';
 import {RecipeService} from './recipes/recipe.service';
 import {DataStorageService} from './shared/data-storage.service';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {DataStorageService} from './shared/data-storage.service';
     ShoppingEditComponent,
     DropdownDirective,
     RecipeStartComponent,
-    FormdataComponent
+    FormdataComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
