@@ -10,7 +10,10 @@
             id="email"
             placeholder="Enter Your UserName..."
             name="email"
-            ngModel>
+            ngModel
+            required
+            #email="ngModel">
+          <span class="help-block" *ngIf="!email.valid && email.touched">Enter Your Valid EmailId !!</span>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
@@ -20,7 +23,10 @@
             id="password"
             placeholder="Enter Your Password..."
             name="password"
-            ngModel>
+            ngModel
+            required
+            #password="ngModel">
+          <span class="help-block" *ngIf="!password.valid && password.touched">Enter Your Valid Password !!</span>
         </div>
         <button class="btn btn-primary" type="submit">Sign Up</button>
       </form>
