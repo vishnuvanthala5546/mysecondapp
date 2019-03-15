@@ -16,6 +16,7 @@
           </li>
         </ul>
         <ul class="navbar-nav">
+
           <ng-template [ngIf]="authService.isAuthenticated()">
             <li class="nav-item" routerLinkActive="active">
               <a class="nav-link" href="javascript:" routerLink="/signup">Register</a>
@@ -24,11 +25,19 @@
               <a class="nav-link" href="javascript:" routerLink="/signin">Login</a>
             </li>
           </ng-template>
+
+          <li><a
+            style="cursor: pointer;"
+            (click)="onLogout()"
+            *ngIf="authService.isAuthenticated()">Logout</a>
+          </li>
+
           <li class="nav-item dropdown" appDropdown *ngIf="authService.isAuthenticated()">
             <a class="nav-link dropdown-toggle" href="javascript:" style="cursor: pointer;" id="navbarDropdownMenuLink"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Manage
             </a>
+
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" style="cursor: pointer" (click)="onSaveData()" href="javascript:">Save Data</a>
               <a class="dropdown-item" style="cursor: pointer" (click)="onFetchData()" href="javascript:">Fetch Data</a>
