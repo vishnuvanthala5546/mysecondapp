@@ -14,18 +14,15 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-
-    <!-- Niche comment ma je pela hatu A se -->
-
     <div class="btn-group">
-      <button type="button" class="btn btn-info">Manage Recipe</button>
+      <button type="button" (click)="onNewRecipe()" class="btn btn-info">Manage Recipe</button>
       <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
       </button>
       <div class="dropdown-menu" appDropdown>
         <a class="dropdown-item" href="javascript:" (click)="onAddToShoppingList()" style="cursor: pointer;">To Shopping
           List</a>
-        <a class="dropdown-item" style="cursor: pointer;" href="javascript:">Edit Recipe</a>
-        <a class="dropdown-item" style="cursor: pointer;" href="javascript:">Delete Recipe</a>
+        <a class="dropdown-item" style="cursor: pointer;" (click)="onEditRecipe()" href="javascript:">Edit Recipe</a>
+        <a class="dropdown-item" style="cursor: pointer;" (click)="onDeleteRecipe()" href="javascript:">Delete Recipe</a>
       </div>
     </div>
   </div>
@@ -51,6 +48,3 @@
     </ul>
   </div>
 </div>
-
-
-
