@@ -33,8 +33,8 @@ import {RecipesModules} from './recipes/recipes.modules';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
     HttpClientModule,
+    AppRoutingModule,
     RecipesModules
   ],
   providers: [
