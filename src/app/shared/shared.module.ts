@@ -11,7 +11,6 @@ import {DropdownDirective} from './dropdown.directive';
     CommonModule,
     DropdownDirective
   ]
-
 })
 export class SharedModule {
 
