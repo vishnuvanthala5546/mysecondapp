@@ -31,7 +31,7 @@ export class RecipeService {
       'This is Nice a test',
       'https://i.ndtvimg.com/i/2017-07/gujarati-thali-620x350_620x350_81500012551.jpg',
       [
-        new Ingredient('Sak-Rotli', 70),
+        new Ingredient('Sak-Rotli', 80),
         new Ingredient('Sole-Puri', 50)
       ])
   ];
